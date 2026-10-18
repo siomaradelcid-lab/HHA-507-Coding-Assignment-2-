@@ -1,0 +1,12 @@
+"ITEM_ID"	"FOOD_NAME"	"DRINK_NAME"	"ITEM_TYPE"	"ITEM_PRICE"	"GLUTEN_FREE"	"DARIY_FREE"	"SEASONAL_SPECIAL"	"CALORIES"
+1	"Avocado Toast"		"Food"	12.5	false	true	false	350
+2	"Blueberry Muffin"		"Food"	4.5	false	false	false	420
+3	"Greek Yogurt Parfait"		"Food"	7.5	true	false	false	280
+4	"Breakfast Sandwich"		"Food"	9.95	false	false	false	550
+5	"Acai Bowl"		"Food"	11.5	true	true	false	400
+7		"Iced Latte"	"Drink"	6.25	true	false	false	150
+8		"Cold Brew"	"Drink"	4.95	true	true	false	5
+9		"Matcha Latte"	"Drink"	6.25	true	false	false	180
+10		"Cappuccino"	"Drink"	5.25	true	false	false	120
+11		"Strawberry Lemonade"	"Drink"	4.75	true	true	true	160
+12		"Pumpkin Spice Latte"	"Drink"	6.5	true	false	true	310
