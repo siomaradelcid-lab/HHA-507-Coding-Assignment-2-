@@ -1,2 +1,72 @@
 SELECT * FROM CAFE
 ORDER BY ITEM_ID
+
+SELECT * FROM CAFE
+ORDER BY ITEM_ID
+
+DELETE FROM CAFE
+WHERE ITEM_ID = 6
+
+SELECT ITEM_ID, DRINK_NAME, ITEM_PRICE
+FROM CAFE
+WHERE ITEM_ID = 7
+
+UPDATE CAFE
+SET ITEM_PRICE = 6.25
+WHERE ITEM_ID = 7
+
+UPDATE CAFE
+SET ITEM_PRICE = 6.25
+WHERE ITEM_ID = 7
+
+SELECT * FROM CAFE
+
+INSERT INTO CAFE
+VALUES
+(1, 'Avocado Toast', NULL, 'Food', 12.50, FALSE, TRUE, FALSE, 350),
+(2, 'Blueberry Muffin', NULL, 'Food', 4.50, FALSE, FALSE, FALSE, 420),
+(3, 'Greek Yogurt Parfait', NULL, 'Food', 7.50, TRUE, FALSE, FALSE, 280),
+(4, 'Breakfast Sandwich', NULL, 'Food', 9.95, FALSE, FALSE, FALSE, 550),
+(5, 'Acai Bowl', NULL, 'Food', 11.50, TRUE, TRUE, FALSE, 400),
+(6, 'Pumpkin Bread', NULL, 'Food', 5.50, FALSE, FALSE, TRUE, 320),
+(7, NULL, 'Iced Latte', 'Drink', 5.75, TRUE, FALSE, FALSE, 150),
+(8, NULL, 'Cold Brew', 'Drink', 4.95, TRUE, TRUE, FALSE, 5),
+(9, NULL, 'Matcha Latte', 'Drink', 6.25, TRUE, FALSE, FALSE, 180),
+(10, NULL, 'Cappuccino', 'Drink', 5.25, TRUE, FALSE, FALSE, 120),
+(11, NULL, 'Strawberry Lemonade', 'Drink', 4.75, TRUE, TRUE, TRUE, 160),
+(12, NULL, 'Pumpkin Spice Latte', 'Drink', 6.50, TRUE, FALSE, TRUE, 310)
+
+INSERT INTO CAFE
+VALUES
+(1, 'Avocado Toast', NULL, 'Food', 12.50, FALSE, TRUE, FALSE, 350)
+(2, 'Blueberry Muffin', NULL, 'Food', 4.50, FALSE, FALSE, FALSE, 420)
+(3, 'Greek Yogurt Parfait', NULL, 'Food', 7.50, TRUE, FALSE, FALSE, 280)
+(4, 'Breakfast Sandwich', NULL, 'Food', 9.95, FALSE, FALSE, FALSE, 550)
+(5, 'Acai Bowl', NULL, 'Food', 11.50, TRUE, TRUE, FALSE, 400)
+(6, 'Pumpkin Bread', NULL, 'Food', 5.50, FALSE, FALSE, TRUE, 320)
+(7, NULL, 'Iced Latte', 'Drink', 5.75, TRUE, FALSE, FALSE, 150)
+(8, NULL, 'Cold Brew', 'Drink', 4.95, TRUE, TRUE, FALSE, 5)
+(9, NULL, 'Matcha Latte', 'Drink', 6.25, TRUE, FALSE, FALSE, 180)
+(10, NULL, 'Cappuccino', 'Drink', 5.25, TRUE, FALSE, FALSE, 120)
+(11, NULL, 'Strawberry Lemonade', 'Drink', 4.75, TRUE, TRUE, TRUE, 160)
+(12, NULL, 'Pumpkin Spice Latte', 'Drink', 6.50, TRUE, FALSE, TRUE, 310)
+
+ALTER TABLE CAFE
+    ADD( CALORIES INT)
+
+ALTER TABLE CAFE(
+    ADD CALORIES INT)
+
+ALTER TABLE CAFE(
+    ADD CALORIES INT
+)
+
+CREATE TABLE CAFE (
+    ITEM_ID INT PRIMARY KEY,
+    FOOD_NAME VARCHAR(200),
+    DRINK_NAME VARCHAR(200),
+    ITEM_TYPE VARCHAR(50),
+    ITEM_PRICE NUMERIC(10,2),
+    GLUTEN_FREE BOOLEAN,
+    DARIY_FREE BOOLEAN,
+    SEASONAL_SPECIAL BOOLEAN)
